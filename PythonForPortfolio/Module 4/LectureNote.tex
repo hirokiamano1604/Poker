@@ -192,4 +192,34 @@ In the LDI, they also have \textbf{Greeks}
     \item $\sigma_{\text{PSP}}$ is a volatility of the PSP strategy
     \item $\gamma$ is a risk-aversion
 \end{enumerate}
+
+\section{Choosing the policy portfolio}
+How do we decide an optimal allocation to PSP and LHP for a given investor?
+This should be related to a risk aversion parameter $\gamma$, however it is impossible to capture the figure.
+Therefore, we should think of it as free parameter.
+
+In practice, investers have a risk budget, and they can increase the allocation to PSP until the budget run out.
+The risk budgets depdn on the stake holders or agents.
+
+There must be a conflict between short-term and long-term perspective, and also they hace a dollar budget.
+If you have only a little risk budget, you need to have an enormous dollar budget to get a certain amount of benefit.
+
+To tackle with this dilemma, one way is to uhide the problem by using a higher discount rate
+or higher risk premia value, and another way is to get a higher dollar budget or a higher risk budget.
+
+\section{Beyond LDI}
+For investers, a well-designed portfolio strategy is the most reliable one.
+The LDI paradigm is the one for this wish.
+The dilemma between performance and hedging motive is very important thing in constructing portfolio strategy.
+
+After skipping some mathematical procedure, we can get a Investor Welfare as
+\[\text{IW} = \frac{\lambda_{\text{PSP}}^2}{ 2 \gamma} + \frac{(1-\gamma)^2}{2 \gamma} \sigma_{\text{L}}^2 \rho_{\text{L,LHP}}^2 + \left(1-\frac{1}{\gamma} \sigma_{\text{L}} \rho_{\text{L,LHP}} \lambda_{\text{PSP}}\right)\]
+the first term represent a pure perf contribution(risk premia by PSP), the second term represent a pure hedging contribution(The hedging effect by LHP) and the last term is a cross-contribution per/hedging.
+
+\section{Liability Friendly Equity Portfolio}
+What's the definition of "Liability Friendliness"?
+
+One answer is that the equity can provide a cash-flow which matches the one of the liability.
+Another aspect is a factor matching focus.
+
 \end{document}
